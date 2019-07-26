@@ -1,0 +1,105 @@
+{
+    "data": [
+        {
+            "type": "posts",
+            "id": 1,
+            "attributes": {
+                "title": "Dolores harum est sunt id sit sunt atque."
+            },
+            "relationships": {
+                "author": {
+                    "links": {
+                        "self": "http://127.0.0.1:8000/api/v1/posts/1",
+                        "related": "http://127.0.0.1:8000/api/v1/posts/1/relationships/author"
+                    },
+                    "data": {
+                        "type": "users",
+                        "id": 8
+                    }
+                },
+                "comments": {
+                    "data": [
+                        {
+                            "type": "comments",
+                            "id": 16
+                        },
+                        {
+                            "type": "comments",
+                            "id": 17
+                        },
+                        {
+                            "type": "comments",
+                            "id": 19
+                        }
+                    ],
+                    "links": {
+                        "self": "http://127.0.0.1:8000/api/v1/posts/1/relationships/comments",
+                        "related": "http://127.0.0.1:8000/api/v1/posts/1/relationships/comments"
+                    }
+                }
+            },
+            "links": {
+                "self": "http://127.0.0.1:8000/api/v1/posts/1"
+            }
+        }
+    ],
+    "links": {
+        "first": "http://127.0.0.1:8000/api/v1/posts?page=1",
+        "last": "http://127.0.0.1:8000/api/v1/posts?page=15",
+        "prev": null,
+        "next": "http://127.0.0.1:8000/api/v1/posts?page=2",
+        "self": "http://127.0.0.1:8000/api/v1/posts"
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 15,
+        "path": "http://127.0.0.1:8000/api/v1/posts",
+        "per_page": 1,
+        "to": 1,
+        "total": 15
+    },
+    "included": [
+        {
+            "type": "users",
+            "id": "8",
+            "attributes": {
+                "name": "Giovanna Boehm",
+                "email": "lowe.molly@example.com"
+            },
+            "links": {
+                "self": "http://127.0.0.1:8000/api/v1/users/8"
+            }
+        },
+        {
+            "type": "comments",
+            "id": "16",
+            "attributes": {
+                "content": "Nostrum quod quia mollitia. Aut quidem deleniti veritatis est quam. Earum voluptatem illum nostrum qui delectus autem sed ut. Quo repellat perspiciatis suscipit id placeat."
+            },
+            "links": {
+                "self": "http://127.0.0.1:8000/api/v1/comments/16"
+            }
+        },
+        {
+            "type": "comments",
+            "id": "17",
+            "attributes": {
+                "content": "Quis optio consequatur sint quo blanditiis cupiditate aut. Ut sapiente nulla voluptas. Rerum unde ducimus sit est dolores vero omnis."
+            },
+            "links": {
+                "self": "http://127.0.0.1:8000/api/v1/comments/17"
+            }
+        },
+        {
+            "type": "comments",
+            "id": "19",
+            "attributes": {
+                "content": "Cupiditate doloribus iure sapiente. Quis suscipit similique itaque eveniet doloribus. Et est animi et blanditiis."
+            },
+            "links": {
+                "self": "http://127.0.0.1:8000/api/v1/comments/19"
+            }
+        }
+    ]
+}
